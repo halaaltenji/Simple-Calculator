@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.calculator-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(234, 234, 234, 0.847);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.1);
+   max-width: 500px; 
+   width: 100%;
+}
+h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+input{
+    margin: 10px;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+
+
+}
+input:focus{
+    outline: none;
+} 
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    color: wheat;
+    background-color:black;
+    font-size: 20px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    opacity: 0.9;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    padding: 10px;
+
+}
+#add{
+    background-color: rgb(221, 190, 17);
+}
+#subtract{
+border-color: rgb(220, 70, 70);
+}
+#multiply{
+    background-color: rgb(117, 117, 236);
+}
+#divide{
+    background-color: rgb(115, 40, 115);
+}
+#result{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+#name{
+    font-size: 18px;
+    opacity: 0.9;
+}
+button:hover{
+    opacity: 1;
+}
+@media (max-width: 600px) {
+    .calculator input {
+        width: 100%; 
+    }
+
+    .buttons {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
